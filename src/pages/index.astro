@@ -244,7 +244,8 @@ const valueComparison = [
       <div class="author-copy story-stack">
         <p class="eyebrow">Sobre la autora</p>
         <h2 class="section-title">
-          Marcela Rodríguez creó este diagnóstico desde experiencia real en operación
+          <span class="author-title-name">Marcela Rodríguez</span>
+          <span>creó este diagnóstico desde experiencia real en operación</span>
         </h2>
         <p class="body-copy">
           Es psicóloga organizacional y lleva más de 20 años trabajando dentro de
@@ -255,15 +256,15 @@ const valueComparison = [
         </div>
         <div class="author-detail-block">
           <h3>Roles que ha ocupado</h3>
-          <div class="author-role-list">
-            {authorRoles.map((item) => <span>{item}</span>)}
-          </div>
+          <ul class="author-list">
+            {authorRoles.map((item) => <li>{item}</li>)}
+          </ul>
         </div>
         <div class="author-detail-block">
           <h3>Sectores en los que ha trabajado</h3>
-          <div class="author-role-list author-role-list--compact">
-            {authorSectors.map((item) => <span>{item}</span>)}
-          </div>
+          <ul class="author-list author-list--compact">
+            {authorSectors.map((item) => <li>{item}</li>)}
+          </ul>
         </div>
       </div>
       <aside class="author-panel">
