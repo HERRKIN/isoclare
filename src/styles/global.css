@@ -58,7 +58,7 @@ img {
 .topbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 80px;
 }
 
@@ -150,19 +150,6 @@ img {
   color: var(--text-secondary);
   font-size: 18px;
   line-height: 1.6;
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 32px;
-}
-
-.hero-price {
-  color: var(--text-muted);
-  font-size: 16px;
-  font-weight: 600;
 }
 
 .section {
