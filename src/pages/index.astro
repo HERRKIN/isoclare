@@ -1,0 +1,280 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+
+const pageTitle =
+  "ISOCLARE Leadership Scan | Descubre tu punto ciego como líder";
+const description =
+  "Diagnóstico de liderazgo para descubrir qué está frenando tus resultados y qué cambiar primero en solo 15 minutos.";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ISOCLARE",
+    url: "https://www.isoclare.com",
+    logo: "https://www.isoclare.com/social/isoclare-og.jpg",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "ISOCLARE Leadership Scan",
+    description,
+    brand: {
+      "@type": "Brand",
+      name: "ISOCLARE",
+    },
+    image: [
+      "https://www.isoclare.com/images/generated-1776452930800.png",
+      "https://www.isoclare.com/images/generated-1776452985783.png",
+    ],
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "39",
+      availability: "https://schema.org/InStock",
+      url: "https://www.isoclare.com/",
+    },
+  },
+];
+
+const painPoints = [
+  {
+    number: "01",
+    title: "Trabajás más, pero los resultados no cambian",
+    description:
+      "Sentís que tu esfuerzo no se traduce en impacto real. El equipo no responde como esperás.",
+  },
+  {
+    number: "02",
+    title: "Tu experiencia ya no es suficiente",
+    description:
+      "Lo que te trajo hasta acá no te va a llevar al siguiente nivel. Algo cambió y no sabés qué.",
+  },
+  {
+    number: "03",
+    title: "Las decisiones te pesan más que antes",
+    description:
+      "Cada vez dudás más. El cansancio y la soledad del liderazgo empiezan a notarse.",
+  },
+];
+
+const benefits = [
+  {
+    number: "1",
+    title: "Claridad",
+    description:
+      "Sabés exactamente dónde estás parado como líder y qué está frenando tus resultados.",
+  },
+  {
+    number: "2",
+    title: "Foco",
+    description:
+      "Dejás de trabajar en todo y empezás a trabajar en lo que realmente mueve la aguja.",
+  },
+  {
+    number: "3",
+    title: "Acción",
+    description:
+      "Recibís recomendaciones concretas para implementar desde el día uno.",
+  },
+];
+
+const includes = [
+  {
+    icon: "✓",
+    title: "Evaluación de 360°",
+    description:
+      "Análisis completo de tu perfil de liderazgo desde múltiples dimensiones.",
+  },
+  {
+    icon: "▤",
+    title: "Reporte personalizado",
+    description:
+      "Informe detallado con tus fortalezas, áreas de mejora y puntos ciegos específicos.",
+  },
+  {
+    icon: "◎",
+    title: "Plan de acción",
+    description:
+      "Recomendaciones concretas y priorizadas para implementar inmediatamente.",
+  },
+  {
+    icon: "✓",
+    title: "100% confidencial",
+    description:
+      "Tus resultados son privados. Solo vos accedés a tu diagnóstico.",
+  },
+];
+
+const audience = [
+  "Liderás equipos y sentís que tu impacto se estancó",
+  "Sos emprendedor/a y necesitás tomar mejores decisiones",
+  "Querés crecer profesionalmente pero no sabés por dónde empezar",
+  "Buscás un diagnóstico honesto, no un test genérico de internet",
+];
+
+const pricingFeatures = [
+  "Diagnóstico completo de liderazgo",
+  "Reporte personalizado con resultados",
+  "Plan de acción con prioridades claras",
+  "Acceso inmediato al completar el pago",
+];
+---
+
+<BaseLayout title={pageTitle} description={description} jsonLd={jsonLd}>
+  <header class="hero">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="#hero">ISOCLARE</a>
+        <a class="mini-cta" href="#pricing">HACER TEST GRATIS</a>
+      </div>
+      <div class="hero-content" id="hero">
+        <p class="eyebrow">Diagnóstico de liderazgo</p>
+        <h1 class="hero-title">Descubre tu punto ciego como líder</h1>
+        <p class="hero-subtitle">
+          El 87% de los líderes no sabe qué lo frena. En 15 minutos, este diagnóstico
+          te muestra exactamente dónde estás parado y qué cambiar primero.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#pricing">Acceder al leadership scan</a>
+          <span class="hero-price">USD $39</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title pain-title">¿Te suena familiar?</h2>
+      <div class="three-grid">
+        {painPoints.map((item) => (
+          <article class="panel pain-card">
+            <span class="card-index">{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <div class="image-block image-large">
+        <img
+          src="/images/generated-1776452930800.png"
+          alt="León coronado representando liderazgo"
+          width="832"
+          height="693"
+          loading="lazy"
+        />
+      </div>
+      <div class="copy-column">
+        <p class="eyebrow">Qué es</p>
+        <h2 class="section-title">ISOCLARE Leadership Scan</h2>
+        <p class="body-copy">
+          Es un diagnóstico estratégico que evalúa tu madurez como líder, tu capacidad
+          de construir equipo y tu impacto organizacional.
+        </p>
+        <p class="body-copy">
+          No es un test de personalidad. Es un escaneo de tu liderazgo real, basado en
+          cómo decidís, delegás y generás resultados.
+        </p>
+        <div class="highlight-box">
+          <span class="highlight-arrow">→</span>
+          <p>
+            En 15 minutos obtenés un mapa claro de tus fortalezas y puntos ciegos como líder.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Qué cambia después del scan</h2>
+      <p class="section-subtitle">
+        Dejás de adivinar y empezás a liderar con datos concretos.
+      </p>
+      <div class="three-grid benefits-grid">
+        {benefits.map((item) => (
+          <article class="benefit-card">
+            <div class="benefit-badge">{item.number}</div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title includes-title">Qué incluye el diagnóstico</h2>
+      <div class="four-grid">
+        {includes.map((item) => (
+          <article class="panel include-card">
+            <div class="include-icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container split-layout audience-layout">
+      <div class="copy-column">
+        <p class="eyebrow">Para quién es</p>
+        <h2 class="section-title">Este diagnóstico es para vos si...</h2>
+        <ul class="audience-list">
+          {audience.map((item) => (
+            <li>
+              <span>✓</span>
+              <p>{item}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="image-block image-tall">
+        <img
+          src="/images/generated-1776452985783.png"
+          alt="Ejecutivo frente a ventanal"
+          width="681"
+          height="832"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container pricing-wrap">
+      <p class="eyebrow">Accedé ahora</p>
+      <h2 class="section-title">Empezá tu leadership scan hoy</h2>
+      <p class="section-subtitle">
+        15 minutos que van a cambiar cómo te ves como líder.
+      </p>
+      <div class="pricing-card">
+        <div class="pricing-headline">
+          <strong>USD $39</strong>
+          <span>/ $35.000 CLP</span>
+        </div>
+        <div class="pricing-divider"></div>
+        <div class="pricing-features">
+          {pricingFeatures.map((item) => <div>{item}</div>)}
+        </div>
+        <a class="primary-button full-width" href="#hero">Acceder al leadership scan</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand footer-brand">ISOCLARE</div>
+      <p>Diagnóstico Internacional de Liderazgo — Todos los derechos reservados</p>
+    </div>
+  </footer>
+</BaseLayout>

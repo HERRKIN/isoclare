@@ -1,0 +1,1421 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "cNE8s",
+      "x": 0,
+      "y": 0,
+      "name": "ISOCLARE Landing Page",
+      "clip": true,
+      "width": 1200,
+      "fill": "$bg-dark",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IRWeb",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": 700,
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            80,
+            60,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "B2Kkq",
+              "name": "topBar",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QZ8uJ",
+                  "name": "logoText",
+                  "fill": "$accent",
+                  "content": "ISOCLARE",
+                  "fontFamily": "Anton",
+                  "fontSize": 24,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "QxbwY",
+                  "name": "navCta",
+                  "fill": "$accent",
+                  "cornerRadius": 4,
+                  "padding": [
+                    10,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9XlQ1",
+                      "name": "navCtaText",
+                      "fill": "$white",
+                      "content": "HACER TEST GRATIS",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "y7en2",
+              "name": "heroContent",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "U732U",
+                  "name": "eyebrow",
+                  "fill": "$accent",
+                  "content": "DIAGNÓSTICO DE LIDERAZGO",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "zFWD4",
+                  "name": "headline",
+                  "fill": "$white",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "DESCUBRE TU PUNTO CIEGO COMO LÍDER",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "Anton",
+                  "fontSize": 72,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MS8OZ",
+                  "name": "subhead",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "El 87% de los líderes no sabe qué lo frena. En 15 minutos, este diagnóstico te muestra exactamente dónde estás parado y qué cambiar primero.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "nXJfN",
+                  "name": "ctaRow",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ah0Ga",
+                      "name": "ctaBtn",
+                      "fill": "$accent",
+                      "cornerRadius": 6,
+                      "padding": [
+                        18,
+                        40
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8wcsf",
+                          "name": "ctaBtnText",
+                          "fill": "$white",
+                          "content": "ACCEDER AL LEADERSHIP SCAN",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LneKY",
+                      "name": "ctaPrice",
+                      "fill": "$text-muted",
+                      "content": "USD $39",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mKnb7",
+          "name": "Pain Section",
+          "width": "fill_container",
+          "fill": "$bg-dark-alt",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "l7xGJ",
+              "name": "painTitle",
+              "fill": "$white",
+              "content": "¿TE SUENA FAMILIAR?",
+              "textAlign": "center",
+              "fontFamily": "Anton",
+              "fontSize": 42,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "9hgTU",
+              "name": "painGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8Ssnz",
+                  "name": "pain1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ObDw3",
+                      "name": "pain1Icon",
+                      "fill": "$accent",
+                      "content": "01",
+                      "fontFamily": "Anton",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fZTZL",
+                      "name": "pain1Title",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Trabajás más, pero los resultados no cambian",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wAO00",
+                      "name": "pain1Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sentís que tu esfuerzo no se traduce en impacto real. El equipo no responde como esperás.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7SRUx",
+                  "name": "pain2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TpgL9",
+                      "name": "pain2Icon",
+                      "fill": "$accent",
+                      "content": "02",
+                      "fontFamily": "Anton",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vplGn",
+                      "name": "pain2Title",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tu experiencia ya no es suficiente",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9Wxhk",
+                      "name": "pain2Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Lo que te trajo hasta acá no te va a llevar al siguiente nivel. Algo cambió y no sabés qué.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eo06h",
+                  "name": "pain3",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9G36l",
+                      "name": "pain3Icon",
+                      "fill": "$accent",
+                      "content": "03",
+                      "fontFamily": "Anton",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N8MK1",
+                      "name": "pain3Title",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Las decisiones te pesan más que antes",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "klspm",
+                      "name": "pain3Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Cada vez dudás más. El cansancio y la soledad del liderazgo empiezan a notarse.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pdUm0",
+          "name": "What Is It Section",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "gap": 60,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Gja2o",
+              "name": "whatImage",
+              "width": 480,
+              "height": 400,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1776452930800.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 12,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "figSj",
+              "name": "whatContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C0xIu",
+                  "name": "whatEyebrow",
+                  "fill": "$accent",
+                  "content": "QUÉ ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "o5Tby",
+                  "name": "whatTitle",
+                  "fill": "$white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ISOCLARE LEADERSHIP SCAN",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Anton",
+                  "fontSize": 42,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RvGXW",
+                  "name": "whatDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Es un diagnóstico estratégico que evalúa tu madurez como líder, tu capacidad de construir equipo y tu impacto organizacional.\n\nNo es un test de personalidad. Es un escaneo de tu liderazgo real — basado en cómo decidís, delegás y generás resultados.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "37lyQ",
+                  "name": "whatHighlight",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cwZBP",
+                      "name": "whatHIcon",
+                      "fill": "$accent",
+                      "content": "→",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M3fl7",
+                      "name": "whatHText",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "En 15 minutos obtenés un mapa claro de tus fortalezas y puntos ciegos como líder.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FOXsK",
+          "name": "Benefits Section",
+          "width": "fill_container",
+          "fill": "$bg-dark-alt",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "XzwJQ",
+              "name": "benTitle",
+              "fill": "$white",
+              "content": "QUÉ CAMBIA DESPUÉS DEL SCAN",
+              "textAlign": "center",
+              "fontFamily": "Anton",
+              "fontSize": 42,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Q0P58",
+              "name": "benSubtitle",
+              "fill": "$text-secondary",
+              "content": "Dejás de adivinar y empezás a liderar con datos concretos.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "rEfhI",
+              "name": "benGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eOPXL",
+                  "name": "ben1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AdCyZ",
+                      "name": "ben1Num",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xK5Q6",
+                          "name": "ben1NumText",
+                          "fill": "$white",
+                          "content": "1",
+                          "fontFamily": "Anton",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "xf1bw",
+                      "name": "ben1Title",
+                      "fill": "$white",
+                      "content": "Claridad",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mK2YY",
+                      "name": "ben1Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sabés exactamente dónde estás parado como líder y qué está frenando tus resultados.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "COWhH",
+                  "name": "ben2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u3lPr",
+                      "name": "ben2Num",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eGIzm",
+                          "name": "ben2NumText",
+                          "fill": "$white",
+                          "content": "2",
+                          "fontFamily": "Anton",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "WLQcp",
+                      "name": "ben2Title",
+                      "fill": "$white",
+                      "content": "Foco",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mKb4V",
+                      "name": "ben2Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Dejás de trabajar en todo y empezás a trabajar en lo que realmente mueve la aguja.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VOE9g",
+                  "name": "ben3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wFx3o",
+                      "name": "ben3Num",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$accent",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "84sCv",
+                          "name": "ben3NumText",
+                          "fill": "$white",
+                          "content": "3",
+                          "fontFamily": "Anton",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PTYdn",
+                      "name": "ben3Title",
+                      "fill": "$white",
+                      "content": "Acción",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tjuPp",
+                      "name": "ben3Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Recibís recomendaciones concretas para implementar desde el día uno.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xYpJu",
+          "name": "Includes Section",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "lxO0k",
+              "name": "incTitle",
+              "fill": "$white",
+              "content": "QUÉ INCLUYE EL DIAGNÓSTICO",
+              "textAlign": "center",
+              "fontFamily": "Anton",
+              "fontSize": 42,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "CMVUm",
+              "name": "incGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MuvLJ",
+                  "name": "inc1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "0fu1E",
+                      "name": "inc1Icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "clipboard-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wiXG2",
+                      "name": "inc1Title",
+                      "fill": "$white",
+                      "content": "Evaluación de 360°",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NjoXE",
+                      "name": "inc1Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Análisis completo de tu perfil de liderazgo desde múltiples dimensiones.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tpu0Q",
+                  "name": "inc2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "wAbB5",
+                      "name": "inc2Icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "chart-bar",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5tzTH",
+                      "name": "inc2Title",
+                      "fill": "$white",
+                      "content": "Reporte personalizado",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2wtOj",
+                      "name": "inc2Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Informe detallado con tus fortalezas, áreas de mejora y puntos ciegos específicos.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Qcei9",
+                  "name": "inc3",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Q7IrR",
+                      "name": "inc3Icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "target",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aE8MP",
+                      "name": "inc3Title",
+                      "fill": "$white",
+                      "content": "Plan de acción",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z8tHs",
+                      "name": "inc3Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Recomendaciones concretas y priorizadas para implementar inmediatamente.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oFiQk",
+                  "name": "inc4",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "5TaCa",
+                      "name": "inc4Icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "shield-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "khDBJ",
+                      "name": "inc4Title",
+                      "fill": "$white",
+                      "content": "100% confidencial",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7dxIH",
+                      "name": "inc4Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tus resultados son privados. Solo vos accedés a tu diagnóstico.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8da6b",
+          "name": "For Who Section",
+          "width": "fill_container",
+          "fill": "$bg-dark-alt",
+          "gap": 60,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zWAcP",
+              "name": "forWhoContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EMsCQ",
+                  "name": "forWhoEyebrow",
+                  "fill": "$accent",
+                  "content": "PARA QUIÉN ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "LMK4t",
+                  "name": "forWhoTitle",
+                  "fill": "$white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ESTE DIAGNÓSTICO ES PARA VOS SI...",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Anton",
+                  "fontSize": 38,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "u4drD",
+                  "name": "forWhoList",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SxNoG",
+                      "name": "fw1",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I9xXc",
+                          "name": "fw1Check",
+                          "fill": "$accent",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fN7K6",
+                          "name": "fw1Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Liderás equipos y sentís que tu impacto se estancó",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o7O2E",
+                      "name": "fw2",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QWXxI",
+                          "name": "fw2Check",
+                          "fill": "$accent",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JnEKA",
+                          "name": "fw2Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sos emprendedor/a y necesitás tomar mejores decisiones",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ehYVx",
+                      "name": "fw3",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fvvmC",
+                          "name": "fw3Check",
+                          "fill": "$accent",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CZuIN",
+                          "name": "fw3Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Querés crecer profesionalmente pero no sabés por dónde empezar",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rQCEH",
+                      "name": "fw4",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "loMai",
+                          "name": "fw4Check",
+                          "fill": "$accent",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dEYTL",
+                          "name": "fw4Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Buscás un diagnóstico honesto, no un test genérico de internet",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fQxYg",
+              "name": "forWhoImg",
+              "width": 440,
+              "height": 420,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1776452985783.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 12,
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "44Skg",
+          "name": "Pricing CTA Section",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "QnJvk",
+              "name": "pricingEyebrow",
+              "fill": "$accent",
+              "content": "ACCEDÉ AHORA",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "6GkHs",
+              "name": "pricingTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "EMPEZÁ TU LEADERSHIP SCAN HOY",
+              "lineHeight": 1.05,
+              "textAlign": "center",
+              "fontFamily": "Anton",
+              "fontSize": 52,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1HSV",
+              "name": "pricingDesc",
+              "fill": "$text-secondary",
+              "content": "15 minutos que van a cambiar cómo te ves como líder.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "YOmfF",
+              "name": "priceBox",
+              "width": 480,
+              "fill": "$bg-card",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 2,
+                "fill": "$accent"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                40,
+                48
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BsgDo",
+                  "name": "priceRow",
+                  "gap": 8,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A6E3v",
+                      "name": "priceMain",
+                      "fill": "$white",
+                      "content": "USD $39",
+                      "fontFamily": "Anton",
+                      "fontSize": 48,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XFBWK",
+                      "name": "priceAlt",
+                      "fill": "$text-muted",
+                      "content": "/ $35.000 CLP",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kgu0s",
+                  "name": "priceSep",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "$border-subtle"
+                },
+                {
+                  "type": "frame",
+                  "id": "QRPzS",
+                  "name": "priceFeatures",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XJcHx",
+                      "name": "pf1",
+                      "fill": "$text-secondary",
+                      "content": "✓  Diagnóstico completo de liderazgo",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vjItS",
+                      "name": "pf2",
+                      "fill": "$text-secondary",
+                      "content": "✓  Reporte personalizado con resultados",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kvdh7",
+                      "name": "pf3",
+                      "fill": "$text-secondary",
+                      "content": "✓  Plan de acción con prioridades claras",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3zicu",
+                      "name": "pf4",
+                      "fill": "$text-secondary",
+                      "content": "✓  Acceso inmediato al completar el pago",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ssRkp",
+                  "name": "finalCta",
+                  "width": "fill_container",
+                  "fill": "$accent",
+                  "cornerRadius": 6,
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Qmt5u",
+                      "name": "finalCtaText",
+                      "fill": "$white",
+                      "content": "ACCEDER AL LEADERSHIP SCAN",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cc8YV",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-dark-alt",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            40,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "PvcFS",
+              "name": "footerLogo",
+              "fill": "$accent",
+              "content": "ISOCLARE",
+              "fontFamily": "Anton",
+              "fontSize": 20,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "KZgJN",
+              "name": "footerText",
+              "fill": "$text-muted",
+              "content": "Diagnóstico Internacional de Liderazgo — Todos los derechos reservados",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#E8721A"
+    },
+    "accent-hover": {
+      "type": "color",
+      "value": "#FF8C2E"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#222222"
+    },
+    "bg-dark": {
+      "type": "color",
+      "value": "#111111"
+    },
+    "bg-dark-alt": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#333333"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#6B7280"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#9CA3AF"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
