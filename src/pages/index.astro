@@ -150,9 +150,18 @@ const authorSectors = [
 ];
 
 const valueComparison = [
-  "Un diagnóstico de liderazgo con consultor especializado puede costar entre $150.000 y $500.000 CLP",
-  "Este instrumento fue diseñado con esa misma lógica profesional, pero optimizado para darte claridad en minutos",
-  "El objetivo no es inspiración pasajera: es detectar brechas reales de desempeño y liderazgo",
+  {
+    icon: "cost",
+    text: "Un diagnóstico de liderazgo con consultor especializado puede costar entre $150.000 y $500.000 CLP",
+  },
+  {
+    icon: "structure",
+    text: "Este instrumento fue diseñado con esa misma lógica profesional, pero optimizado para darte claridad en minutos",
+  },
+  {
+    icon: "focus",
+    text: "El objetivo no es inspiración pasajera: es detectar brechas reales de desempeño y liderazgo",
+  },
 ];
 ---
 
@@ -293,18 +302,56 @@ const valueComparison = [
     </div>
   </section>
 
-  <section class="section story-section">
-    <div class="container story-shell">
-      <h2 class="section-title" data-reveal>Por qué este diagnóstico vale más que un test genérico</h2>
-      <div class="three-grid benefits-grid">
+  <section class="section story-section value-section" data-parallax-section>
+    <div class="value-section__backdrop" aria-hidden="true">
+      <div class="value-section__texture"></div>
+      <div class="value-section__glow"></div>
+      <div class="value-section__grid"></div>
+    </div>
+    <div class="container story-shell value-shell">
+      <p class="eyebrow" data-reveal>Por qué vale más</p>
+      <h2 class="section-title value-title" data-reveal>
+        ¿Por qué este diagnóstico vale más que un test genérico?
+      </h2>
+      <p class="section-subtitle value-subtitle" data-reveal style="--reveal-delay: 120ms;">
+        Porque no busca entretenerte ni describirte por encima. Busca mostrarte con
+        criterio dónde están tus brechas reales de liderazgo y qué hacer primero.
+      </p>
+      <div class="three-grid benefits-grid value-grid">
         {valueComparison.map((item, index) => (
           <article
-            class="panel include-card"
+            class="panel include-card value-card"
             data-reveal
             style={`--reveal-delay: ${index * 140 + 120}ms;`}
           >
-            <div class="include-icon">{index + 1}</div>
-            <p>{item}</p>
+            <div class="include-icon" aria-hidden="true">
+              {item.icon === "cost" && (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <path d="M12 7v10"></path>
+                  <path d="M15 9.5c0-1.1-1.34-2-3-2s-3 .9-3 2 1.34 2 3 2 3 .9 3 2-1.34 2-3 2-3-.9-3-2"></path>
+                </svg>
+              )}
+              {item.icon === "structure" && (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="5" width="16" height="14" rx="2"></rect>
+                  <path d="M8 9h8"></path>
+                  <path d="M8 13h5"></path>
+                  <path d="M16 12v4"></path>
+                </svg>
+              )}
+              {item.icon === "focus" && (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <circle cx="12" cy="12" r="2.5"></circle>
+                  <path d="M12 3v2"></path>
+                  <path d="M12 19v2"></path>
+                  <path d="M3 12h2"></path>
+                  <path d="M19 12h2"></path>
+                </svg>
+              )}
+            </div>
+            <p>{item.text}</p>
           </article>
         ))}
       </div>
@@ -333,13 +380,17 @@ const valueComparison = [
     </div>
   </section>
 
-  <section class="section story-section">
-    <div class="container story-shell">
+  <section class="section story-section includes-section">
+    <div class="includes-section__stage" aria-hidden="true">
+      <div class="includes-section__image"></div>
+      <div class="includes-section__overlay"></div>
+    </div>
+    <div class="container story-shell includes-shell">
       <h2 class="section-title includes-title" data-reveal>Qué incluye el diagnóstico</h2>
-      <div class="four-grid">
+      <div class="four-grid includes-grid">
         {includes.map((item, index) => (
           <article
-            class="panel include-card"
+            class="panel include-card includes-card"
             data-reveal
             style={`--reveal-delay: ${index * 110 + 140}ms;`}
           >
@@ -411,6 +462,7 @@ const valueComparison = [
   <script>
     const items = Array.from(document.querySelectorAll("[data-reveal]"));
     const storySections = Array.from(document.querySelectorAll("[data-story]"));
+    const parallaxSections = Array.from(document.querySelectorAll("[data-parallax-section]"));
     const desktop = window.matchMedia("(min-width: 1025px)");
     let teardownStoryScroll = null;
 
@@ -434,6 +486,10 @@ const valueComparison = [
         storySections.forEach((section) => {
           section.dataset.activeStep = "4";
         });
+        parallaxSections.forEach((section) => {
+          section.style.setProperty("--parallax-shift", "0px");
+          section.style.setProperty("--parallax-progress", "1");
+        });
         return;
       }
 
@@ -452,7 +508,7 @@ const valueComparison = [
 
       items.forEach((item) => observer.observe(item));
 
-      if (storySections.length) {
+      if (storySections.length || parallaxSections.length) {
         const updateStories = () => {
           storySections.forEach((section) => {
             const rect = section.getBoundingClientRect();
@@ -467,6 +523,16 @@ const valueComparison = [
             if (progress >= 0.58) step = "4";
 
             section.dataset.activeStep = step;
+          });
+
+          parallaxSections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const viewport = window.innerHeight || 1;
+            const progress = ((viewport - rect.top) / (viewport + rect.height));
+            const clamped = Math.min(Math.max(progress, 0), 1);
+            const shift = (clamped - 0.5) * 220;
+            section.style.setProperty("--parallax-shift", `${shift.toFixed(1)}px`);
+            section.style.setProperty("--parallax-progress", clamped.toFixed(3));
           });
         };
 

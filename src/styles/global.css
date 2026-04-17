@@ -459,6 +459,136 @@ img {
   margin-top: 48px;
 }
 
+.value-section {
+  position: relative;
+  overflow: clip;
+  background:
+    radial-gradient(circle at top right, rgba(232, 114, 26, 0.12), transparent 28%),
+    linear-gradient(180deg, #111111 0%, #171717 100%);
+  --parallax-shift: 0px;
+}
+
+.value-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.value-shell {
+  align-items: flex-start;
+}
+
+.value-title,
+.value-subtitle {
+  max-width: 880px;
+  text-align: left;
+}
+
+.value-subtitle {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.value-grid {
+  width: 100%;
+}
+
+.value-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)),
+    rgba(16, 16, 16, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.value-section__backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.value-section__texture,
+.value-section__glow,
+.value-section__grid {
+  position: absolute;
+  inset: -8%;
+}
+
+.value-section__texture {
+  background:
+    linear-gradient(125deg, rgba(255,255,255,0.05) 0%, transparent 26%),
+    linear-gradient(305deg, rgba(255,255,255,0.04) 0%, transparent 24%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.025) 0,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px,
+      transparent 96px
+    ),
+    linear-gradient(180deg, rgba(255,255,255,0.02), transparent 56%);
+  transform: translate3d(0, calc(var(--parallax-shift) * 0.55), 0) scale(1.08);
+  opacity: 0.45;
+}
+
+.value-section__glow {
+  background:
+    radial-gradient(circle at 78% 24%, rgba(232, 114, 26, 0.22), transparent 18%),
+    radial-gradient(circle at 18% 78%, rgba(255, 255, 255, 0.08), transparent 24%);
+  transform: translate3d(0, calc(var(--parallax-shift) * -0.28), 0) scale(1.02);
+  opacity: 0.95;
+}
+
+.value-section__grid {
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.14), rgba(0,0,0,0.44)),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 52px,
+      rgba(255,255,255,0.028) 52px,
+      rgba(255,255,255,0.028) 53px
+    );
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.95) 80%, transparent 100%);
+  transform: translate3d(0, calc(var(--parallax-shift) * 0.15), 0);
+  opacity: 0.65;
+}
+
+.includes-section {
+  position: relative;
+  overflow: clip;
+  background-color: #111111;
+  background-image:
+    linear-gradient(180deg, rgba(10, 10, 10, 0.56), rgba(10, 10, 10, 0.72)),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.46), rgba(17, 17, 17, 0.18) 45%, rgba(17, 17, 17, 0.46)),
+    url("/images/includes-parallax-desk.png");
+  background-repeat: no-repeat;
+  background-position: center center, center center, center center;
+  background-size: 100% 100%, 100% 100%, cover;
+}
+
+.includes-shell {
+  position: relative;
+  z-index: 1;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.includes-grid {
+  width: 100%;
+}
+
+.includes-card {
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(10, 10, 10, 0.42), rgba(10, 10, 10, 0.66)),
+    rgba(18, 18, 18, 0.22);
+  backdrop-filter: blur(7px);
+}
+
+.includes-section__stage,
+.includes-section__image,
+.includes-section__overlay {
+  display: none;
+}
+
 .benefit-card {
   padding: 32px 32px 0;
   text-align: center;
@@ -491,6 +621,11 @@ img {
   color: var(--accent);
   font-size: 22px;
   font-weight: 700;
+}
+
+.include-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .audience-layout {
@@ -718,6 +853,26 @@ img {
     padding: 0;
   }
 
+  .value-section {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  .includes-section {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 0;
+    background-attachment: scroll, scroll, fixed;
+  }
+
+  .includes-shell {
+    min-height: 100vh;
+    min-height: 100svh;
+    justify-content: center;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+
   .pain-scroll__sticky {
     position: sticky;
     top: 0;
@@ -824,6 +979,10 @@ img {
     gap: 18px;
   }
 
+  .value-title {
+    max-width: 760px;
+  }
+
   .benefits-grid > :last-child {
     grid-column: 1 / -1;
     max-width: 420px;
@@ -922,6 +1081,16 @@ img {
 
   .four-grid {
     grid-template-columns: 1fr;
+  }
+
+  .value-title,
+  .value-subtitle {
+    max-width: none;
+  }
+
+  .includes-shell {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .image-tall {
