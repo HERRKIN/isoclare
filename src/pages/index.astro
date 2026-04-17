@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
 const pageTitle =
-  "ISOCLARE Leadership Scan | Descubre tu punto ciego como líder";
+  "ISOCLARÉ Leadership Scan | Descubre tu punto ciego como líder";
 const description =
   "Diagnóstico de liderazgo para descubrir qué está frenando tus resultados y qué cambiar primero en solo 15 minutos.";
 
@@ -11,18 +11,18 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "ISOCLARE",
+    name: "ISOCLARÉ",
     url: "https://www.isoclare.com",
     logo: "https://www.isoclare.com/social/isoclare-og.jpg",
   },
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "ISOCLARE Leadership Scan",
+    name: "ISOCLARÉ Leadership Scan",
     description,
     brand: {
       "@type": "Brand",
-      name: "ISOCLARE",
+      name: "ISOCLARÉ",
     },
     image: [
       "https://www.isoclare.com/images/hero-lioness.png",
@@ -121,24 +121,59 @@ const pricingFeatures = [
   "Plan de acción con prioridades claras",
   "Acceso inmediato al completar el pago",
 ];
+
+const authorRoles = [
+  "Control Documental",
+  "Coordinador QA",
+  "Especialista de Calidad",
+  "ITO QA",
+  "Ingeniero QA",
+  "Gerente de Calidad",
+  "Jefa de Calidad",
+  "Consultor Normas ISO",
+];
+
+const authorCredentials = [
+  "Psicóloga Organizacional, Universidad Internacional SEK",
+  "Auditor Líder en Sistemas de Gestión Integrado ISO 9001 / 45001 / 14001, Bureau Veritas",
+  "Diplomada en Gestión y Mejoramiento de Calidad, Pontificia Universidad Católica",
+];
+
+const authorSectors = [
+  "Minería",
+  "OTEC",
+  "Ingeniería",
+  "Metalmecánica",
+  "Transporte",
+  "Tapones de corcho",
+  "Control de plagas",
+];
+
+const valueComparison = [
+  "Un diagnóstico de liderazgo con consultor especializado puede costar entre $150.000 y $500.000 CLP",
+  "Este instrumento fue diseñado con esa misma lógica profesional, pero optimizado para darte claridad en minutos",
+  "El objetivo no es inspiración pasajera: es detectar brechas reales de desempeño y liderazgo",
+];
 ---
 
 <BaseLayout title={pageTitle} description={description} jsonLd={jsonLd}>
   <header class="hero">
     <div class="container">
       <div class="topbar">
-        <a class="brand" href="#hero">ISOCLARE</a>
+        <a class="brand" href="#hero">ISOCLARÉ</a>
         <a class="mini-cta" href="#pricing">HACER TEST GRATIS</a>
       </div>
       <div class="hero-content" id="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Diagnóstico de liderazgo</p>
-          <h1 class="hero-title">Descubre tu punto ciego como líder</h1>
-          <p class="hero-subtitle">
+        <div class="hero-copy story-stack">
+          <p class="eyebrow" data-reveal>Diagnóstico de liderazgo</p>
+          <h1 class="hero-title" data-reveal style="--reveal-delay: 120ms;">
+            Descubre tu punto ciego como líder
+          </h1>
+          <p class="hero-subtitle" data-reveal style="--reveal-delay: 240ms;">
             El 87% de los líderes no sabe qué lo frena. En 15 minutos, este diagnóstico
             te muestra exactamente dónde estás parado y qué cambiar primero.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions" data-reveal style="--reveal-delay: 360ms;">
             <a class="primary-button" href="#pricing">Acceder al leadership scan</a>
             <span class="hero-price">USD $39</span>
           </div>
@@ -147,24 +182,31 @@ const pricingFeatures = [
     </div>
   </header>
 
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title pain-title">¿Te suena familiar?</h2>
-      <div class="three-grid">
-        {painPoints.map((item) => (
-          <article class="panel pain-card">
-            <span class="card-index">{item.number}</span>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-          </article>
-        ))}
+  <section class="section section-alt pain-scroll" data-story="pain">
+    <div class="pain-scroll__sticky">
+      <div class="container pain-scroll__frame">
+        <div class="pain-scroll__cards">
+          {painPoints.map((item) => (
+            <article class="panel pain-card pain-scroll__card">
+              <span class="card-index">{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+        <h2 class="section-title pain-scroll__title">¿Te suena familiar?</h2>
       </div>
+    </div>
+    <div class="pain-scroll__track" aria-hidden="true">
+      <div class="pain-scroll__step" data-story-step="2"></div>
+      <div class="pain-scroll__step" data-story-step="3"></div>
+      <div class="pain-scroll__step" data-story-step="4"></div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split-layout">
-      <div class="image-block image-large">
+  <section class="section story-section">
+    <div class="container split-layout story-shell">
+      <div class="image-block image-large" data-reveal>
         <img
           src="/images/generated-1776452930800.png"
           alt="León coronado representando liderazgo"
@@ -173,18 +215,21 @@ const pricingFeatures = [
           loading="lazy"
         />
       </div>
-      <div class="copy-column">
-        <p class="eyebrow">Qué es</p>
-        <h2 class="section-title">ISOCLARE Leadership Scan</h2>
-        <p class="body-copy">
+      <div class="copy-column story-stack">
+        <p class="eyebrow" data-reveal>Qué es</p>
+        <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">
+          ISOCLARÉ Leadership Scan
+        </h2>
+        <p class="body-copy" data-reveal style="--reveal-delay: 240ms;">
           Es un diagnóstico estratégico que evalúa tu madurez como líder, tu capacidad
           de construir equipo y tu impacto organizacional.
         </p>
-        <p class="body-copy">
+        <p class="body-copy" data-reveal style="--reveal-delay: 360ms;">
           No es un test de personalidad. Es un escaneo de tu liderazgo real, basado en
-          cómo decidís, delegás y generás resultados.
+          psicología organizacional, neurociencia, liderazgo situacional, normas ISO y
+          estándares de desempeño.
         </p>
-        <div class="highlight-box">
+        <div class="highlight-box" data-reveal style="--reveal-delay: 480ms;">
           <span class="highlight-arrow">→</span>
           <p>
             En 15 minutos obtenés un mapa claro de tus fortalezas y puntos ciegos como líder.
@@ -194,15 +239,90 @@ const pricingFeatures = [
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Qué cambia después del scan</h2>
-      <p class="section-subtitle">
+  <section class="section section-alt story-section author-section">
+    <div class="container split-layout author-layout story-shell">
+      <div class="author-copy story-stack">
+        <p class="eyebrow">Sobre la autora</p>
+        <h2 class="section-title">
+          Marcela Rodríguez creó este diagnóstico desde experiencia real en operación
+        </h2>
+        <p class="body-copy">
+          Es psicóloga organizacional y lleva más de 20 años trabajando dentro de
+          sistemas donde liderazgo, cumplimiento y criterio son parte del trabajo diario.
+        </p>
+        <div class="author-meta">
+          {authorCredentials.map((item) => <div class="author-meta__item">{item}</div>)}
+        </div>
+        <div class="author-detail-block">
+          <h3>Roles que ha ocupado</h3>
+          <div class="author-role-list">
+            {authorRoles.map((item) => <span>{item}</span>)}
+          </div>
+        </div>
+        <div class="author-detail-block">
+          <h3>Sectores en los que ha trabajado</h3>
+          <div class="author-role-list author-role-list--compact">
+            {authorSectors.map((item) => <span>{item}</span>)}
+          </div>
+        </div>
+      </div>
+      <aside class="author-panel">
+        <div class="author-photo-frame">
+          <img
+            src="/images/author-marcela.png"
+            alt="Marcela Rodríguez"
+            width="1024"
+            height="1536"
+            loading="lazy"
+          />
+        </div>
+        <div class="author-panel__content">
+          <p class="author-panel__eyebrow">Marcela Rodríguez</p>
+          <h3>Psicóloga Organizacional</h3>
+          <p class="author-panel__text">
+            Más de 20 años trabajando en calidad, liderazgo, implementación y sistemas
+            de gestión en entornos exigentes.
+          </p>
+          <p class="author-panel__text">
+            Formación en psicología organizacional, auditoría líder ISO y mejoramiento
+            de la calidad.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section story-section">
+    <div class="container story-shell">
+      <h2 class="section-title" data-reveal>Por qué este diagnóstico vale más que un test genérico</h2>
+      <div class="three-grid benefits-grid">
+        {valueComparison.map((item, index) => (
+          <article
+            class="panel include-card"
+            data-reveal
+            style={`--reveal-delay: ${index * 140 + 120}ms;`}
+          >
+            <div class="include-icon">{index + 1}</div>
+            <p>{item}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt story-section">
+    <div class="container story-shell">
+      <h2 class="section-title" data-reveal>Qué cambia después del scan</h2>
+      <p class="section-subtitle" data-reveal style="--reveal-delay: 120ms;">
         Dejás de adivinar y empezás a liderar con datos concretos.
       </p>
       <div class="three-grid benefits-grid">
-        {benefits.map((item) => (
-          <article class="benefit-card">
+        {benefits.map((item, index) => (
+          <article
+            class="benefit-card"
+            data-reveal
+            style={`--reveal-delay: ${index * 140 + 220}ms;`}
+          >
             <div class="benefit-badge">{item.number}</div>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
@@ -212,12 +332,16 @@ const pricingFeatures = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title includes-title">Qué incluye el diagnóstico</h2>
+  <section class="section story-section">
+    <div class="container story-shell">
+      <h2 class="section-title includes-title" data-reveal>Qué incluye el diagnóstico</h2>
       <div class="four-grid">
-        {includes.map((item) => (
-          <article class="panel include-card">
+        {includes.map((item, index) => (
+          <article
+            class="panel include-card"
+            data-reveal
+            style={`--reveal-delay: ${index * 110 + 140}ms;`}
+          >
             <div class="include-icon">{item.icon}</div>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
@@ -227,21 +351,23 @@ const pricingFeatures = [
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container split-layout audience-layout">
-      <div class="copy-column">
-        <p class="eyebrow">Para quién es</p>
-        <h2 class="section-title">Este diagnóstico es para vos si...</h2>
+  <section class="section section-alt story-section">
+    <div class="container split-layout audience-layout story-shell">
+      <div class="copy-column story-stack">
+        <p class="eyebrow" data-reveal>Para quién es</p>
+        <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">
+          Este diagnóstico es para vos si...
+        </h2>
         <ul class="audience-list">
-          {audience.map((item) => (
-            <li>
+          {audience.map((item, index) => (
+            <li data-reveal style={`--reveal-delay: ${index * 110 + 220}ms;`}>
               <span>✓</span>
               <p>{item}</p>
             </li>
           ))}
         </ul>
       </div>
-      <div class="image-block image-tall">
+      <div class="image-block image-tall" data-reveal style="--reveal-delay: 180ms;">
         <img
           src="/images/generated-1776452985783.png"
           alt="Ejecutivo frente a ventanal"
@@ -253,14 +379,14 @@ const pricingFeatures = [
     </div>
   </section>
 
-  <section class="section" id="pricing">
-    <div class="container pricing-wrap">
-      <p class="eyebrow">Accedé ahora</p>
-      <h2 class="section-title">Empezá tu leadership scan hoy</h2>
-      <p class="section-subtitle">
+  <section class="section story-section" id="pricing">
+    <div class="container pricing-wrap story-shell">
+      <p class="eyebrow" data-reveal>Accedé ahora</p>
+      <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">Empezá tu leadership scan hoy</h2>
+      <p class="section-subtitle" data-reveal style="--reveal-delay: 240ms;">
         15 minutos que van a cambiar cómo te ves como líder.
       </p>
-      <div class="pricing-card">
+      <div class="pricing-card" data-reveal style="--reveal-delay: 360ms;">
         <div class="pricing-headline">
           <strong>USD $39</strong>
           <span>/ $35.000 CLP</span>
@@ -276,8 +402,95 @@ const pricingFeatures = [
 
   <footer class="footer">
     <div class="container footer-content">
-      <div class="brand footer-brand">ISOCLARE</div>
+      <div class="brand footer-brand">ISOCLARÉ</div>
       <p>Diagnóstico Internacional de Liderazgo — Todos los derechos reservados</p>
     </div>
   </footer>
+
+  <script>
+    const items = Array.from(document.querySelectorAll("[data-reveal]"));
+    const storySections = Array.from(document.querySelectorAll("[data-story]"));
+    const desktop = window.matchMedia("(min-width: 1025px)");
+    let teardownStoryScroll = null;
+
+    const setVisible = (entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    };
+
+    const boot = () => {
+      teardownStoryScroll?.();
+      teardownStoryScroll = null;
+
+      items.forEach((item) => item.classList.remove("is-visible"));
+      storySections.forEach((section) => {
+        section.dataset.activeStep = "0";
+      });
+
+      if (!desktop.matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        items.forEach((item) => item.classList.add("is-visible"));
+        storySections.forEach((section) => {
+          section.dataset.activeStep = "4";
+        });
+        return;
+      }
+
+      const viewportHeight = window.innerHeight || 1;
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < viewportHeight * 0.92 && rect.bottom > viewportHeight * 0.08) {
+          item.classList.add("is-visible");
+        }
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => entries.forEach(setVisible),
+        { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
+      );
+
+      items.forEach((item) => observer.observe(item));
+
+      if (storySections.length) {
+        const updateStories = () => {
+          storySections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const viewport = window.innerHeight || 1;
+            const total = Math.max(section.offsetHeight - viewport, 1);
+            const progress = Math.min(Math.max(-rect.top / total, 0), 1);
+
+            let step = "0";
+            if (progress >= 0.06) step = "1";
+            if (progress >= 0.22) step = "2";
+            if (progress >= 0.4) step = "3";
+            if (progress >= 0.58) step = "4";
+
+            section.dataset.activeStep = step;
+          });
+        };
+
+        let ticking = false;
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            updateStories();
+            ticking = false;
+          });
+        };
+
+        updateStories();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll);
+
+        teardownStoryScroll = () => {
+          window.removeEventListener("scroll", onScroll);
+          window.removeEventListener("resize", onScroll);
+        };
+      }
+    };
+
+    boot();
+    desktop.addEventListener?.("change", boot);
+  </script>
 </BaseLayout>
