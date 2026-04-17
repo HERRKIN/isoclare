@@ -43,10 +43,15 @@ img {
 }
 
 .hero {
-  min-height: 700px;
+  min-height: 100vh;
+  min-height: 100svh;
   background:
-    radial-gradient(circle at 50% 12%, rgba(232, 114, 26, 0.12), transparent 30%),
-    var(--bg-dark);
+    linear-gradient(90deg, rgba(10, 10, 10, 0.18) 0%, rgba(10, 10, 10, 0.22) 24%, rgba(10, 10, 10, 0.38) 44%, rgba(10, 10, 10, 0.72) 68%, rgba(10, 10, 10, 0.92) 100%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.34) 0%, rgba(10, 10, 10, 0.44) 100%),
+    url("/images/hero-background.png");
+  background-position: 32% center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .topbar {
@@ -96,12 +101,22 @@ img {
 
 .hero-content {
   display: flex;
-  min-height: 580px;
-  flex-direction: column;
+  min-height: calc(100vh - 115px);
+  min-height: calc(100svh - 115px);
   align-items: center;
-  justify-content: center;
-  padding-bottom: 60px;
-  text-align: center;
+  justify-content: flex-end;
+  padding: 24px 0 60px;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 620px;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
 }
 
 .eyebrow {
@@ -123,12 +138,13 @@ img {
 }
 
 .hero-title {
-  max-width: 900px;
+  max-width: 560px;
   font-size: clamp(54px, 6vw, 72px);
+  text-wrap: balance;
 }
 
 .hero-subtitle {
-  max-width: 700px;
+  max-width: 560px;
   margin: 24px 0 0;
   color: var(--text-secondary);
   font-size: 18px;
@@ -435,12 +451,31 @@ img {
   }
 
   .hero {
+    background-position: 38% center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .hero {
     min-height: auto;
   }
 
   .hero-content {
     min-height: auto;
-    padding: 96px 0 80px;
+    padding: 72px 0 80px;
+  }
+
+  .hero-copy {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
   }
 
   .three-grid,
@@ -477,6 +512,10 @@ img {
 
   .hero-subtitle {
     font-size: 16px;
+  }
+
+  .hero {
+    background-position: 36% center;
   }
 
   .hero-actions {
