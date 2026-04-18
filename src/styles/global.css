@@ -1,12 +1,12 @@
 :root {
-  --accent: #e8721a;
-  --accent-hover: #ff8c2e;
-  --bg-card: #222222;
-  --bg-dark: #111111;
-  --bg-dark-alt: #1a1a1a;
-  --border-subtle: #333333;
-  --text-muted: #6b7280;
-  --text-secondary: #9ca3af;
+  --accent: #d77845;
+  --accent-hover: #e38a59;
+  --bg-card: #6d7d8b;
+  --bg-dark: #7e8e9d;
+  --bg-dark-alt: #8d9cac;
+  --border-subtle: rgba(255, 255, 255, 0.18);
+  --text-muted: #d5dee7;
+  --text-secondary: #edf2f6;
   --white: #ffffff;
   --container: 1200px;
 }
@@ -47,8 +47,8 @@ img {
   min-height: 100vh;
   min-height: 100svh;
   background:
-    linear-gradient(90deg, rgba(10, 10, 10, 0.18) 0%, rgba(10, 10, 10, 0.22) 24%, rgba(10, 10, 10, 0.38) 44%, rgba(10, 10, 10, 0.72) 68%, rgba(10, 10, 10, 0.92) 100%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.34) 0%, rgba(10, 10, 10, 0.44) 100%),
+    linear-gradient(90deg, rgba(97, 116, 132, 0.14) 0%, rgba(97, 116, 132, 0.2) 24%, rgba(97, 116, 132, 0.34) 44%, rgba(74, 89, 102, 0.54) 68%, rgba(58, 71, 84, 0.7) 100%),
+    linear-gradient(180deg, rgba(103, 118, 132, 0.18) 0%, rgba(86, 102, 116, 0.34) 100%),
     url("/images/hero-background.png");
   background-position: 32% center;
   background-size: cover;
@@ -193,7 +193,7 @@ img {
 
 .panel {
   border: 1px solid var(--border-subtle);
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)) , var(--bg-card);
+  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04)) , var(--bg-card);
   border-radius: 8px;
 }
 
@@ -330,7 +330,7 @@ img {
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)),
+    linear-gradient(180deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05)),
     var(--bg-card);
   align-self: start;
   justify-self: end;
@@ -342,9 +342,9 @@ img {
   overflow: hidden;
   border-radius: 12px;
   background:
-    radial-gradient(circle at top, rgba(232, 114, 26, 0.18), transparent 45%),
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    radial-gradient(circle at top, rgba(215, 120, 69, 0.22), transparent 45%),
+    linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .author-photo-frame img {
@@ -407,9 +407,9 @@ img {
 }
 
 .author-meta__item {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.12);
   color: var(--text-secondary);
 }
 
@@ -450,8 +450,8 @@ img {
   position: relative;
   overflow: clip;
   background:
-    radial-gradient(circle at top right, rgba(232, 114, 26, 0.12), transparent 28%),
-    linear-gradient(180deg, #111111 0%, #171717 100%);
+    radial-gradient(circle at top right, rgba(215, 120, 69, 0.16), transparent 28%),
+    linear-gradient(180deg, #738495 0%, #8191a1 100%);
   --parallax-shift: 0px;
 }
 
@@ -479,10 +479,10 @@ img {
 }
 
 .value-card {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)),
-    rgba(16, 16, 16, 0.72);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.05)),
+    rgba(93, 109, 123, 0.72);
   backdrop-filter: blur(5px);
 }
 
@@ -541,10 +541,10 @@ img {
 .includes-section {
   position: relative;
   overflow: clip;
-  background-color: #111111;
+  background-color: #7a8b9a;
   background-image:
-    linear-gradient(180deg, rgba(10, 10, 10, 0.56), rgba(10, 10, 10, 0.72)),
-    linear-gradient(90deg, rgba(17, 17, 17, 0.46), rgba(17, 17, 17, 0.18) 45%, rgba(17, 17, 17, 0.46)),
+    linear-gradient(180deg, rgba(94, 110, 124, 0.52), rgba(82, 96, 109, 0.68)),
+    linear-gradient(90deg, rgba(88, 103, 118, 0.44), rgba(88, 103, 118, 0.14) 45%, rgba(88, 103, 118, 0.44)),
     url("/images/includes-parallax-desk.png");
   background-repeat: no-repeat;
   background-position: center center, center center, center center;
@@ -563,10 +563,10 @@ img {
 }
 
 .includes-card {
-  border-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.18);
   background:
-    linear-gradient(180deg, rgba(10, 10, 10, 0.42), rgba(10, 10, 10, 0.66)),
-    rgba(18, 18, 18, 0.22);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.05)),
+    rgba(86, 101, 115, 0.38);
   backdrop-filter: blur(7px);
 }
 
