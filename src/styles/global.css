@@ -46,7 +46,7 @@ img {
 .hero {
   min-height: 100vh;
   min-height: 100svh;
-  background: url("/images/hero-background.png");
+  background: url("/images/hero-portada.png");
   background-position: 32% center;
   background-size: cover;
   background-repeat: no-repeat;
