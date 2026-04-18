@@ -284,8 +284,12 @@ img {
 
 .image-tall {
   justify-self: end;
-  width: 440px;
-  height: 420px;
+  width: 420px;
+  height: 560px;
+}
+
+.image-tall img {
+  object-position: center top;
 }
 
 .highlight-box {
