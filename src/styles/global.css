@@ -759,6 +759,19 @@ img {
   text-align: center;
 }
 
+.footer-link {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-legal {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .pain-scroll {
   position: relative;
 }
