@@ -405,22 +405,21 @@ const authorSectors = [
   </section>
 
   <section class="section story-section" id="pricing">
-    <div class="container pricing-wrap story-shell">
+    <div class="container story-shell">
       <p class="eyebrow" data-reveal>Accede ahora</p>
-      <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">Empieza tu leadership scan hoy</h2>
-      <p class="section-subtitle" data-reveal style="--reveal-delay: 240ms;">
-        15 minutos que pueden cambiar cómo te ves como líder.
+      <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">Elige tu punto de entrada</h2>
+      <p class="section-subtitle" data-reveal style="--reveal-delay: 200ms;">
+        Dos caminos, un mismo criterio: liderar con estructura en entornos de alto rendimiento.
       </p>
-      <div class="pricing-card" data-reveal style="--reveal-delay: 360ms;">
-        <div class="pricing-headline">
-          <strong>USD $39</strong>
-          <span>/ $35.000 CLP</span>
-        </div>
-        <div class="pricing-divider"></div>
-        <div class="pricing-features">
-          {pricingFeatures.map((item) => <div>{item}</div>)}
-        </div>
-        <a class="primary-button full-width" href="#hero">Acceder al leadership scan</a>
+      <div class="pricing-wrap">
+        {services.filter(s => !s.soon).map((s, i) => (
+          <div class="pricing-card" data-reveal style={`--reveal-delay: ${280 + i * 120}ms`}>
+            <p class="pricing-card__title">{s.title}</p>
+            <p class="pricing-card__subtitle">{s.subtitle}</p>
+            <p class="pricing-card__desc">{s.description}</p>
+            <a class="primary-button full-width" href="#">Llévame a {s.title}</a>
+          </div>
+        ))}
       </div>
     </div>
   </section>
