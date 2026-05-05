@@ -56,63 +56,46 @@ const painPoints = [
     number: "03",
     title: "TRANSFORMA TU LIDERAZGO EN ENTORNOS ISO Y DE ALTO RENDIMIENTO",
     description:
-      "Estas características no sólo son rasgos de personalidad, son capacidades entrenables que se desarrollan cuando existen marcos o criterios claros a seguir, por lo tanto, podrás: Potenciar tu influencia, navegar con éxito y cambiar tu vida profesional.",
+      "El liderazgo efectivo en entornos ISO y de alto rendimiento no depende solo de habilidades. Se sostiene en capacidades estructurales que permiten decidir con claridad, comunicar con precisión y sostener el desempeño sin desgaste innecesario. Estas capacidades no son rasgos de personalidad. Son entrenables cuando existe un criterio claro, por lo tanto, podrás: Potenciar tu influencia, navegar con éxito y cambiar tu vida profesional.",
   },
 ];
 
-const benefits = [
-  {
-    number: "1",
-    title: "Claridad",
-    description:
-      "Sabes exactamente dónde estás hoy como líder y qué está frenando tus resultados.",
-  },
-  {
-    number: "2",
-    title: "Foco",
-    description:
-      "Dejas de intentar abarcar todo y empiezas a enfocarte en lo que realmente mueve la aguja.",
-  },
-  {
-    number: "3",
-    title: "Acción",
-    description:
-      "Recibes recomendaciones concretas para implementar desde el día uno.",
-  },
+const audienceCircles = [
+  "Profesionales ISO de los sistemas de gestión y entornos regulados (ITO, auditora interna/externa, jefa calidad, supervisora, encargada calidad, consultora ISO, HSEC, etc.)",
+  "Líderes emergentes que buscan posicionarse y asumir mayor responsabilidad estratégica",
+  "Mujeres en industrias de alta exigencia, minería, ingeniería, construcción, salud y más",
+  "Directivas que necesitan fortalecer su influencia y sostener decisiones estratégicas",
 ];
 
-const includes = [
+const services = [
   {
-    icon: "✓",
-    title: "Evaluación de 360°",
+    title: "LEADERSHIP SCAN",
+    subtitle: "Diagnóstico Perfil de Liderazgo ISO y Alto Rendimiento",
     description:
-      "Análisis completo de tu perfil de liderazgo desde múltiples dimensiones.",
+      "Diagnóstico ejecutivo diseñado para mujeres que necesitan operar con autoridad, claridad y posición en entornos ISO y de alto rendimiento. Permite identificar cómo estás liderando hoy, detectar brechas críticas y obtener un marco claro para ordenar tu liderazgo de forma eficiente y sostenible.",
+    soon: false,
   },
   {
-    icon: "▤",
-    title: "Reporte personalizado",
+    title: "SPEAKING CONFIDENCE",
+    subtitle: "Hablar y Presentar en Público con Confianza para Profesionales Técnicos",
     description:
-      "Informe detallado con tus fortalezas, áreas de mejora y puntos ciegos específicos.",
+      "Entrenamiento mental para hablar y presentar en público en entornos de alto rendimiento. Entrenamiento mental para comunicar con seguridad incluso bajo presión.",
+    soon: false,
   },
   {
-    icon: "◎",
-    title: "Plan de acción",
+    title: "COACHING DE LIDERAZGO BASADO EN EL ESTÁNDAR QUÁ™",
+    subtitle: "Para Liderar con Criterio en entornos ISO y de Alto Rendimiento",
     description:
-      "Recomendaciones concretas y priorizadas para implementar inmediatamente.",
+      "Proceso de acompañamiento orientado a desarrollar un liderazgo con criterio, capaz de sostener decisiones bajo presión y demostrar una gestión consistente en entornos regulados y de alto rendimiento, integrando claridad estratégica, autonomía y solidez técnica.",
+    soon: true,
   },
   {
-    icon: "✓",
-    title: "100% confidencial",
+    title: "MICROTRAINING ESPECIALIZADO",
+    subtitle: "Micro Charlas enfocadas en la Norma ISO 9001/14001 y/o 45001",
     description:
-      "Tus resultados son privados. Solo tú accedes a tu diagnóstico.",
+      "Interpretación aplicada de las normas ISO para entender qué exige realmente el sistema, cómo se implementa evitando errores y cómo enfrentamos la realidad de la organización, para entregarte claros y aplicables criterios de gestión.",
+    soon: true,
   },
-];
-
-const audience = [
-  "Lideras equipos y sientes que tu impacto se estancó",
-  "Eres emprendedora o emprendedor y necesitas tomar mejores decisiones",
-  "Quieres crecer profesionalmente, pero no sabes por dónde partir",
-  "Buscas un diagnóstico honesto, no un test genérico de internet",
 ];
 
 const pricingFeatures = [
@@ -149,20 +132,6 @@ const authorSectors = [
   "Control de plagas",
 ];
 
-const valueComparison = [
-  {
-    icon: "cost",
-    text: "Un diagnóstico de liderazgo con consultor especializado puede costar entre $150.000 y $500.000 CLP",
-  },
-  {
-    icon: "structure",
-    text: "Este instrumento fue diseñado con esa misma lógica profesional, pero optimizado para darte claridad en minutos",
-  },
-  {
-    icon: "focus",
-    text: "El objetivo no es inspiración pasajera: es detectar brechas reales de desempeño y liderazgo",
-  },
-];
 ---
 
 <BaseLayout title={pageTitle} description={description} jsonLd={jsonLd}>
@@ -174,17 +143,12 @@ const valueComparison = [
       <div class="hero-content" id="hero">
         <div class="hero-copy story-stack">
           <p class="hero-kicker" data-reveal>
-            <span class="hero-kicker__line">Lioness Leadership Fundamentals</span>
-            <span class="hero-kicker__meta">ISO Edition™</span>
+            <span class="hero-kicker__line">LIONESS LEADERSHIP™</span>
+            <span class="hero-kicker__meta">Cómo liderar con criterio en entornos ISO y de alto rendimiento</span>
           </p>
           <h1 class="hero-title" data-reveal style="--reveal-delay: 120ms;">
-            Liderazgo estratégico para mujeres en entornos ISO y de alto rendimiento.
+            Liderazgo estratégico para mujeres que operan bajo presión.
           </h1>
-          <p class="hero-manifesto" data-reveal style="--reveal-delay: 240ms;">
-            <span>Liderar sin permiso</span>
-            <span>Decidir con claridad</span>
-            <span>Sostener bajo presión</span>
-          </p>
         </div>
       </div>
     </div>
@@ -202,7 +166,7 @@ const valueComparison = [
             </article>
           ))}
         </div>
-        <h2 class="section-title pain-scroll__title">Lioness Leadership Fundamentals ISO Edition</h2>
+        <h2 class="section-title pain-scroll__title">Lioness Leadership™</h2>
       </div>
     </div>
     <div class="pain-scroll__track" aria-hidden="true">
@@ -215,49 +179,71 @@ const valueComparison = [
   <section class="section story-section">
     <div class="container split-layout story-shell">
       <div class="image-block image-large" data-reveal>
-        <img
-          src="/images/generated-1776452930800.png"
-          alt="León coronado representando liderazgo"
-          width="832"
-          height="693"
-          loading="lazy"
-        />
+        <div class="video-placeholder">Video próximamente</div>
       </div>
       <div class="copy-column story-stack">
         <p class="eyebrow" data-reveal>Qué es</p>
         <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">
-          ISOCLARÉ Leadership Scan
+          QUÉ ES LIDERAZGO PARA LIONESS LEADERSHIP
         </h2>
         <p class="body-copy" data-reveal style="--reveal-delay: 240ms;">
-          Es un diagnóstico estratégico que evalúa tu madurez como líder, tu capacidad
-          de construir equipo y tu impacto organizacional.
+          El liderazgo no es sólo carisma ni personalidad, es una función estructural.
+        </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 300ms;">
+          Existe para asegurar coherencia estratégica, dar dirección y sostener la operación en entornos de alto rendimiento y donde el error cuesta.
         </p>
         <p class="body-copy" data-reveal style="--reveal-delay: 360ms;">
-          No es un test de personalidad. Es un escaneo de tu liderazgo real, basado en
-          psicología organizacional, neurociencia, liderazgo situacional, normas ISO y
-          estándares de desempeño.
+          No se trata solo de inspirar, sino de reducir la complejidad, ordenar la toma de decisiones y mantener la cooperación organizacional.
         </p>
-        <div class="highlight-box" data-reveal style="--reveal-delay: 480ms;">
-          <span class="highlight-arrow">→</span>
-          <p>
-            En 15 minutos obtienes un mapa claro de tus fortalezas y puntos ciegos como líder.
-          </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 420ms;">
+          Cuando el liderazgo falla, el sistema se descoordina, pero cuando funciona, el desempeño se sostiene.
+        </p>
+        <div class="enfoque-block" data-reveal style="--reveal-delay: 500ms;">
+          <p><strong>Enfoque:</strong> Bajo este enfoque, el liderazgo se trabaja como un sistema que puede diagnosticarse, ajustarse y desarrollarse en función de los estándares y entornos ISO de alto rendimiento.</p>
+          <p>Esto implica:</p>
+          <ul>
+            <li>Diagnosticar cómo está operando el liderazgo dentro del sistema organizacional</li>
+            <li>Ajustar los criterios y dinámicas que están afectando la coherencia y la ejecución</li>
+            <li>Desarrollar un liderazgo capaz de sostener resultados bajo presión y estándares de alto rendimiento</li>
+          </ul>
+          <p>No trabajo el liderazgo como una habilidad aislada, sino como una variable crítica del sistema que impacta directamente en los resultados.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section section-alt story-section">
+    <div class="container story-shell">
+      <p class="eyebrow" data-reveal>Mecanismo QUA™</p>
+      <h2 class="section-title" data-reveal style="--reveal-delay: 80ms;">MECANISMO QUA™</h2>
+      <p class="section-subtitle" data-reveal style="--reveal-delay: 160ms;">Cómo se Opera el Liderazgo en la Práctica</p>
+      <div class="content-narrow">
+        <p class="body-copy" data-reveal style="--reveal-delay: 240ms;">
+          Para trabajar este enfoque, utilizo el Mecanismo QUA™, que permite ordenar cómo decides y sostienes tu liderazgo en contextos de alta exigencia.
+        </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 300ms;">
+          No es teoría, es una forma concreta de operar el liderazgo.
+        </p>
+      </div>
+      <div class="qua-diagram" data-reveal style="--reveal-delay: 400ms;">Diagrama QUA™ — próximamente</div>
+      <p class="qua-footer" data-reveal style="--reveal-delay: 500ms;">
+        Sin este mecanismo, el liderazgo depende del contexto · Con el Mecanismo QUA™, el liderazgo se vuelve claro, estructurado y sostenible
+      </p>
     </div>
   </section>
 
   <section class="section section-alt story-section author-section">
     <div class="container split-layout author-layout story-shell">
       <div class="author-copy story-stack">
-        <p class="eyebrow">Sobre la autora</p>
+        <p class="eyebrow">Sobre la autora de Lioness Leadership Fundamentals – ISO Edition</p>
         <h2 class="section-title">
-          <span class="author-title-name">Marcela Rodríguez</span>
-          <span>creó este diagnóstico desde experiencia real en operación</span>
+          Soy <span class="author-title-name">Marcela Rodríguez Sotomayor</span> y durante 20 años de experiencia he liderado u operado desde dentro de los sistemas ISO y de alto rendimiento.
         </h2>
         <p class="body-copy">
-          Es psicóloga organizacional y lleva más de 20 años trabajando dentro de
-          sistemas donde liderazgo, cumplimiento y criterio son parte del trabajo diario.
+          No desde la teoría, sino desde la operación real: Tomando decisiones, sosteniendo procesos y enfrentando las mismas exigencias que hoy viven quienes lideran en estos contextos.
+        </p>
+        <p class="body-copy">
+          Este sistema no nace desde el concepto, sino desde la experiencia aplicada.
         </p>
         <div class="author-meta">
           {authorCredentials.map((item) => <div class="author-meta__item">{item}</div>)}
@@ -286,16 +272,11 @@ const valueComparison = [
                     />
                   </div>
         <div class="author-panel__content">
-          <p class="author-panel__eyebrow">Marcela Rodríguez</p>
-          <h3>Psicóloga Organizacional</h3>
-          <p class="author-panel__text">
-            Más de 20 años trabajando en calidad, liderazgo, implementación y sistemas
-            de gestión en entornos exigentes.
-          </p>
-          <p class="author-panel__text">
-            Formación en psicología organizacional, auditoría líder ISO y mejoramiento
-            de la calidad.
-          </p>
+          <p class="author-panel__eyebrow">Marcela Rodríguez Sotomayor</p>
+          <h3>Especialista de Calidad</h3>
+          <p class="author-panel__text">Psicóloga Organizacional</p>
+          <p class="author-panel__text">Auditor Líder Sistema de Gestión Integrado</p>
+          <p class="author-panel__text">Diplomada en Gestión y Mejoramiento de la Calidad</p>
         </div>
       </aside>
     </div>
@@ -308,73 +289,71 @@ const valueComparison = [
       <div class="value-section__grid"></div>
     </div>
     <div class="container story-shell value-shell">
-      <p class="eyebrow" data-reveal>Por qué vale más</p>
+      <p class="eyebrow" data-reveal>PROPUESTA ISOCLARÉ</p>
       <h2 class="section-title value-title" data-reveal>
-        ¿Por qué este diagnóstico vale más que un test genérico?
+        PROPUESTA ISOCLARÉ
       </h2>
       <p class="section-subtitle value-subtitle" data-reveal style="--reveal-delay: 120ms;">
-        Porque no busca entretenerte ni describirte por encima. Busca mostrarte con
-        criterio dónde están tus brechas reales de liderazgo y qué hacer primero.
+        Traduzco las capacidades claves del liderazgo en entornos ISO y de alto rendimiento en un marco práctico, aplicable y alineado con la realidad. Porque decidir bajo presión, comunicar con claridad y sostener el desempeño no es opcional.
       </p>
       <div class="three-grid benefits-grid value-grid">
-        {valueComparison.map((item, index) => (
-          <article
-            class="panel include-card value-card"
-            data-reveal
-            style={`--reveal-delay: ${index * 140 + 120}ms;`}
-          >
-            <div class="include-icon" aria-hidden="true">
-              {item.icon === "cost" && (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="8"></circle>
-                  <path d="M12 7v10"></path>
-                  <path d="M15 9.5c0-1.1-1.34-2-3-2s-3 .9-3 2 1.34 2 3 2 3 .9 3 2-1.34 2-3 2-3-.9-3-2"></path>
-                </svg>
-              )}
-              {item.icon === "structure" && (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="4" y="5" width="16" height="14" rx="2"></rect>
-                  <path d="M8 9h8"></path>
-                  <path d="M8 13h5"></path>
-                  <path d="M16 12v4"></path>
-                </svg>
-              )}
-              {item.icon === "focus" && (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="7"></circle>
-                  <circle cx="12" cy="12" r="2.5"></circle>
-                  <path d="M12 3v2"></path>
-                  <path d="M12 19v2"></path>
-                  <path d="M3 12h2"></path>
-                  <path d="M19 12h2"></path>
-                </svg>
-              )}
-            </div>
-            <p>{item.text}</p>
-          </article>
-        ))}
+        <article class="panel include-card value-card" data-reveal style="--reveal-delay: 120ms;">
+          <h3>QUÉ ES LIONESS LEADERSHIP™</h3>
+          <p>Es un sistema de liderazgo diseñado para entornos ISO y de alto rendimiento, donde su foco está en desarrollar:</p>
+          <ul>
+            <li>El criterio y la capacidad de interpretar la situación</li>
+            <li>El definir desde dónde liderar</li>
+            <li>La sostenibilidad de las decisiones con claridad y coherencia</li>
+            <li>El liderazgo con estructura, intención y dirección</li>
+          </ul>
+        </article>
+        <article class="panel include-card value-card" data-reveal style="--reveal-delay: 260ms;">
+          <h3>REGLA CARDINAL - DIAGNOSTICAR Y ORDENAR</h3>
+          <p>El liderazgo también ocurre en el cerebro. En entornos exigentes, este interpreta la presión como amenaza, lo que afecta la claridad y la toma de decisiones.</p>
+          <p>Por eso, el primer paso no es actuar, es diagnosticar y ordenar.</p>
+        </article>
+        <article class="panel include-card value-card" data-reveal style="--reveal-delay: 400ms;">
+          <h3>QUÉ CAMBIA AL APLICAR EL CRITERIO DEL MODELO LIONESS LEADERSHIP™</h3>
+          <p>Cuando aplicas este enfoque:</p>
+          <ul>
+            <li>Dejas de reaccionar y comienzas a decidir con claridad</li>
+            <li>Dejas de explicar y comienzas a sostener</li>
+            <li>Dejas de depender de validación externa</li>
+            <li>Ordenas tus límites y tu energía</li>
+            <li>Te posicionas con más solidez</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section section-alt story-section">
-    <div class="container story-shell">
-      <h2 class="section-title" data-reveal>Qué cambia después del scan</h2>
-      <p class="section-subtitle" data-reveal style="--reveal-delay: 120ms;">
-        Dejas de adivinar y empiezas a liderar con datos concretos.
-      </p>
-      <div class="three-grid benefits-grid">
-        {benefits.map((item, index) => (
-          <article
-            class="benefit-card"
-            data-reveal
-            style={`--reveal-delay: ${index * 140 + 220}ms;`}
-          >
-            <div class="benefit-badge">{item.number}</div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-          </article>
-        ))}
+    <div class="container split-layout audience-layout story-shell">
+      <div class="copy-column story-stack">
+        <p class="eyebrow" data-reveal>Para quién es</p>
+        <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">
+          PARA QUIÉN ES EL SISTEMA LIONESS LEADERSHIP
+        </h2>
+        <p class="section-subtitle" data-reveal style="--reveal-delay: 180ms;">
+          Este sistema está diseñado para mujeres que lideran en entornos ISO y de alto rendimiento.
+        </p>
+        <ul class="audience-list">
+          {audienceCircles.map((item, index) => (
+            <li data-reveal style={`--reveal-delay: ${index * 110 + 260}ms;`}>
+              <span>◎</span>
+              <p>{item}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="image-block image-tall" data-reveal style="--reveal-delay: 180ms;">
+        <img
+          src="/images/audience-executive-woman.png"
+          alt="Profesional de liderazgo en entornos ISO"
+          width="1024"
+          height="1536"
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
@@ -385,16 +364,17 @@ const valueComparison = [
       <div class="includes-section__overlay"></div>
     </div>
     <div class="container story-shell includes-shell">
-      <h2 class="section-title includes-title" data-reveal>Qué incluye el diagnóstico</h2>
+      <h2 class="section-title includes-title" data-reveal>SERVICIOS DISEÑADOS PARA SOSTENER TU LIDERAZGO EN ENTORNOS ISO Y DE ALTO RENDIMIENTO</h2>
       <div class="four-grid includes-grid">
-        {includes.map((item, index) => (
+        {services.map((item, index) => (
           <article
             class="panel include-card includes-card"
             data-reveal
             style={`--reveal-delay: ${index * 110 + 140}ms;`}
           >
-            <div class="include-icon">{item.icon}</div>
+            {item.soon && <p class="soon-badge">PRÓXIMAMENTE</p>}
             <h3>{item.title}</h3>
+            <p class="service-subtitle">{item.subtitle}</p>
             <p>{item.description}</p>
           </article>
         ))}
@@ -403,29 +383,25 @@ const valueComparison = [
   </section>
 
   <section class="section section-alt story-section">
-    <div class="container split-layout audience-layout story-shell">
-      <div class="copy-column story-stack">
-        <p class="eyebrow" data-reveal>Para quién es</p>
-        <h2 class="section-title" data-reveal style="--reveal-delay: 120ms;">
-          Este diagnóstico es para ti si...
-        </h2>
-        <ul class="audience-list">
-          {audience.map((item, index) => (
-            <li data-reveal style={`--reveal-delay: ${index * 110 + 220}ms;`}>
-              <span>✓</span>
-              <p>{item}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div class="image-block image-tall" data-reveal style="--reveal-delay: 180ms;">
-        <img
-          src="/images/audience-executive-woman-whatsapp.jpeg"
-          alt="Ejecutiva elegante frente a un ventanal"
-          width="1024"
-          height="1536"
-          loading="lazy"
-        />
+    <div class="container story-shell">
+      <div class="content-narrow">
+        <h2 class="section-title" data-reveal>ES MOMENTO DE DEJAR DE ASUMIR… Y EMPEZAR A DEMOSTRAR</h2>
+        <p class="body-copy" data-reveal style="--reveal-delay: 120ms;">
+          Liderar en entornos de alto rendimiento no es sólo cumplir, es sostener un estándar.
+        </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 180ms;">
+          Esto no es un espacio para aprender más. Es un espacio para dejar de liderar desde la intuición y comenzar a hacerlo con criterio.
+        </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 240ms;">
+          Aquí no se trata sólo de encajar en un perfil, sino de entenderlo y saber operarlo con criterio.
+        </p>
+        <p class="body-copy" data-reveal style="--reveal-delay: 300ms;">
+          Porque el liderazgo no se declara, el liderazgo se sostiene.
+        </p>
+        <div class="cta-group" data-reveal style="--reveal-delay: 400ms;">
+          <a class="primary-button" href="#hero">Ver mi perfil de Liderazgo Hoy</a>
+          <a class="primary-button" href="#hero">Entrenar mi Comunicación Hoy</a>
+        </div>
       </div>
     </div>
   </section>
