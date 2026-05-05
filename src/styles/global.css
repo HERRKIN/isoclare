@@ -1343,11 +1343,16 @@ img {
 .content-narrow {
   max-width: 740px;
   margin: 0 auto;
+}
+
+.content-narrow .section-title,
+.content-narrow .section-subtitle,
+.content-narrow .eyebrow {
   text-align: center;
 }
 
 .content-narrow .body-copy {
-  text-align: center;
+  text-align: left;
 }
 
 .content-narrow .cta-group {
