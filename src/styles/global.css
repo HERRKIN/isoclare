@@ -1359,6 +1359,17 @@ img {
   justify-content: center;
 }
 
+/* Override include-card text-align: center for cards with long text */
+.value-card p,
+.include-card p {
+  text-align: left;
+}
+
+/* Long services title — left-align for readability */
+.includes-title {
+  text-align: left;
+}
+
 /* Lists inside value cards — override include-card text-align: center */
 .value-card ul {
   list-style: none;
